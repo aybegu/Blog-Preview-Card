@@ -63,6 +63,11 @@ body {
   letter-spacing: -.3px ;
 }
 
+.main--title:hover{
+  color:var(--Yellow);
+  cursor: pointer;
+}
+
 .main--text{
   font-size: 16px;
   color: var(--Grey);
