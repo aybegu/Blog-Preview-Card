@@ -1,9 +1,13 @@
-
 body {
   margin: 0;
+  min-height: 100vh;
   font-family: 'Figtree', sans-serif;
   background-color: var(--Yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 :root{
   --Yellow: hsl(47, 88%, 63%);
   --White: hsl(0, 0%, 100%);
@@ -13,43 +17,72 @@ body {
 
 .app{
   background-color: var(--White);
-  width: 550px;
-  border-radius: 1rem;
-  box-shadow: 5px 5px 0px 5px rgba(0, 0, 0, 1);
+  width: 350px;
+  padding: 1.5rem;
+  border-radius: 1.3rem;
+  box-shadow: 10px 8px 0px 0px rgba(0, 0, 0, 1);
   display: flex;
   justify-content: center;
+  border: 1px solid black;
+  
 }
 
 .main{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:baseline;
+}
 
+.main > img{
+  width: 100%;
+  border-radius: .7rem;
+}
 
+.main--block{
+  width: 80px;
+  display: flex;
+  margin-top: 1.5rem;
+  justify-content: center;
+  padding: 8px;
+  background-color: var(--Yellow);
+  border-radius: .3rem;
+}
+.main--block > h4{
+  margin: 0;
 }
 
 .main--date{
-
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .main--title{
-
+  font-size: 25px;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -.3px ;
 }
 
 .main--text{
+  font-size: 16px;
+  color: var(--Grey);
+  line-height: 25px;
+  font-weight: 500;
 
 }
 
 .main--profile{
-
+  display: flex;
+  font-size: 15px;
+  gap: 10px;
+  margin-right: auto;
+  align-items: center;
 }
 
-
-
-
-
-
+.main--profile > img{
+  width: 35px;
+  height: 35px;
+}
 
 .attribution {
   font-size: 11px;
